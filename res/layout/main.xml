@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffffff" >
+
+    <TextView
+        android:id="@+id/lblWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+	<!-- 
+    <Button
+        android:id="@+id/btnAuthenticate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblWelcome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/authenticate"
+        android:onClick="AuthenticateUser" />
+ 	-->
+    <!--
+    <Button
+        android:id="@+id/btnPopular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAuthenticate"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/popular_btn_text"
+        android:onClick="StartPopular" />
+    -->
+    
+	<Button
+        android:id="@+id/btnPopularList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/lblWelcome"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/popular_list_btn_text"
+        android:onClick="StartPopularList" />
+
+    <EditText 
+        android:id="@+id/txtUsername"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPopularList"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:inputType="text" 
+        android:hint="@string/username_edit_text" />
+    
+	<Button
+        android:id="@+id/btnGetUserInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtUsername"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/username_btn_text"
+        android:onClick="GetUserInfo" />
+</RelativeLayout>

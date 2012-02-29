@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layScroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffffff" >
+
+        <TextView
+            android:id="@+id/lblUserInfoTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/username_placeholder"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ff000000" />
+
+        <ImageView
+            android:id="@+id/imgUserInfoProfilePhoto"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lblUserInfoTitle"
+            android:layout_margin="10dp"
+            android:background="#ff000000" />
+          
+		<Button
+            android:id="@+id/btnFollow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:layout_below="@id/imgUserInfoProfilePhoto"
+            android:text="@string/follow_btn_text"
+            android:onClick="ViewProfileOnWeb" />
+
+		<TableLayout
+            android:id="@+id/layUserStats"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btnFollow"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical" >
+
+            <TableRow>
+	           <TextView
+	               android:id="@+id/lblFollowers"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_margin="5dip"
+	               android:textColor="#ff000000" />
+	
+	           <TextView
+	               android:id="@+id/lblFollowing"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_margin="5dip"
+	               android:textColor="#ff000000" />
+			</TableRow>
+            <TableRow>
+	           <TextView
+	               android:id="@+id/lblLikes"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_margin="5dip"
+	               android:textColor="#ff000000" />
+             
+	           <TextView
+	               android:id="@+id/lblPins"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_margin="5dip"
+	               android:textColor="#ff000000" />
+			</TableRow>
+            <TableRow>
+	           <TextView
+	               android:id="@+id/lblBoards"
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:layout_margin="5dip"
+	               android:textColor="#ff000000" />
+			</TableRow>
+		</TableLayout>
+    </RelativeLayout>
+</ScrollView>

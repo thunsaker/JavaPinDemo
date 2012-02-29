@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <string name="app_name">JavaPin Demo</string>
+    <string name="welcome">Welcome to JavaPin</string>
+    
+    <!-- Button Text -->
+    <string name="authenticate">Authenticate Now!</string>
+    <string name="popular_btn_text">Popular Items Stack</string>
+    <string name="popular_list_btn_text">Popular Items List</string>
+    <string name="username_btn_text">Get User Info</string>
+    <string name="username_edit_text">Username</string>
+    <string name="follow_btn_text">Follow</string>
+    <string name="following_btn_text">Following</string>
+
+    <string name="baseApiUrl">https://api.pinterest.com/v2/</string>
+    <string name="clientId">YOUR_CLIENT_ID</string>
+    <string name="clientSecret">YOUR_CLIENT_SECRET</string>
+    <string name="callbackUrl">YOUR_CALLBACK_URL</string>
+    
+    <string name="popular">popular</string>
+    <string name="popular_list">popular list</string>
+    <string name="user_activity_title">View Profile</string>
+    <string name="username_placeholder">Username</string>
+    
+    <!-- User profile Counts -->
+    <plurals name="follower_count">
+    	<item quantity="one">1 Follower</item>
+    	<item quantity="other">%d Followers</item>
+    </plurals>
+    <plurals name="following_count">
+        <item quantity="one">Following 1</item>
+        <item quantity="other">Following %d</item>
+    </plurals>
+    <plurals name="pin_count">
+    	<item quantity="one">1 Pin</item>
+    	<item quantity="other">%d Pins</item>
+    </plurals>
+    <plurals name="like_count">
+    	<item quantity="one">1 Like</item>
+    	<item quantity="other">%d Likes</item>
+    </plurals>
+    <plurals name="board_count">
+    	<item quantity="one">1 Board</item>
+    	<item quantity="other">%d Boards</item>
+    </plurals>
+    
+    <!-- scope: read or read_write -->
+    <string name="authorizeUrl">https://pinterest.com/oauth/authorize/?client_id=%1$s&amp;redirect_uri=%2$s&amp;scope=read_write</string>
+</resources>
